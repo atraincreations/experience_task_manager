@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest Log</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quest-creation-container">
+        <h1>Quest Log</h1>
+        <div class="quest-input">
+            <input type="text" class="quest-name-input" placeholder="Quest Name">
+            <input type="text" class="quest-desc-input" placeholder="Quest Description">
+            <label for="quest-difficulty">Choose a difficulty:</label>
+            <select name="quest-difficulty" id="quest-difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button type="submit" id="accept-quest">Accept Quest</button>
+        </div>
+    </div>
+    <div class="active-quests">
+        <table class="current-quests">
+            <th>Quest Name</th>
+            <th>Quest Description</th>
+            <th>Difficulty</th>
+            <th>Complete</th>
+        </table>
+    </div>
+
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
